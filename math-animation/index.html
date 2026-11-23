@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,12 +51,21 @@
     .info-section a {
       color: #38aaff;
       text-decoration: underline;
+      overflow-wrap: anywhere;
     }
 
     .info-section li {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
+
   </style>
+
+  <!-- p5.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+  <!-- Animation Code -->
+  <script src="sketch.js"></script>
+
 </head>
 
 <body>
@@ -67,7 +76,8 @@
     Mathematics: Coordinate Arithmetic and Boundary Comparisons
   </p>
 
-  <!-- Animation will appear here through sketch.js -->
+
+  <!-- Animation appears here through sketch.js -->
 
 
   <div class="info-section">
@@ -75,8 +85,11 @@
     <h2>Controls</h2>
 
     <ul>
-      <li><b>SPACEBAR:</b> Pause / Resume animation (if implemented in sketch.js)</li>
+      <li>
+        <b>SPACEBAR:</b> Pause / Resume animation
+      </li>
     </ul>
+
 
     <h2>Video Explanation</h2>
 
@@ -87,34 +100,54 @@
       </a>
     </p>
 
+
     <h2>Sources & References</h2>
 
-    <ul>
+    <ol>
+
       <li>
-        <b>p5.js Library (v1.9.0):</b>
-        <a href="https://p5js.org/reference/" target="_blank">
-          Official p5.js Reference
+        p5.js. (n.d.). <i>Motion: Bounce</i>.
+        <a href="https://editor.p5js.org/p5/sketches/Motion%3A_Bounce"
+           target="_blank">
+          https://editor.p5js.org/p5/sketches/Motion%3A_Bounce
         </a>
-        - Referenced for creating the canvas, drawing shapes,
-        and animation functions.
       </li>
 
       <li>
-        <b>MDN Web Docs:</b>
-        <a href="https://developer.mozilla.org/" target="_blank">
-          JavaScript Documentation
+        p5.js. (n.d.). <i>circle()</i>.
+        <a href="https://p5js.org/reference/p5/circle/"
+           target="_blank">
+          https://p5js.org/reference/p5/circle/
         </a>
-        - Referenced for JavaScript syntax,
-        variables, and conditional statements.
       </li>
-    </ul>
+
+      <li>
+        p5.js. (n.d.). <i>keyPressed()</i>.
+        <a href="https://p5js.org/reference/p5/keyPressed/"
+           target="_blank">
+          https://p5js.org/reference/p5/keyPressed/
+        </a>
+      </li>
+
+      <li>
+        MDN Web Docs. (n.d.). <i>Expressions and operators</i>.
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators"
+           target="_blank">
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators
+        </a>
+      </li>
+
+      <li>
+        MDN Web Docs. (n.d.). <i>The script element</i>.
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"
+           target="_blank">
+          https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+        </a>
+      </li>
+
+    </ol>
 
   </div>
-
-
-  <!-- Load p5.js first, then your sketch.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-  <script src="sketch.js"></script>
 
 </body>
 </html>
