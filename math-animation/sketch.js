@@ -7,7 +7,6 @@ let isPaused = false;
 
 function setup() {
   createCanvas(600, 400); 
-  canvas.parent('canvas-container');
 }
 
 function draw() {
