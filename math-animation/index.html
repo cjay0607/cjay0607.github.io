@@ -1,29 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Bouncing Ball Animation</title>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-
-  <script src="sketch.js"></script>
 
   <style>
     body {
       margin: 0;
       padding: 20px;
-      background-color: #f0f0f0;
+      background-color: #121212;
+      color: white;
       font-family: Arial, sans-serif;
       text-align: center;
     }
 
     h1 {
-      color: #222;
+      color: white;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #cccccc;
     }
 
     canvas {
-      border: 2px solid black;
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #333;
+    }
+
+    .info-section {
+      background-color: #1e1e1e;
+      color: white;
+      max-width: 750px;
+      margin: 20px auto;
+      padding: 28px;
+      border-radius: 12px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .info-section h2 {
+      color: white;
+      margin-top: 20px;
+    }
+
+    .info-section a {
+      color: #38aaff;
+      text-decoration: underline;
+    }
+
+    .info-section li {
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -31,7 +62,59 @@
 <body>
 
   <h1>Bouncing Ball Animation</h1>
-  <p>Mathematics: Coordinate Arithmetic and Boundary Comparisons</p>
+
+  <p>
+    Mathematics: Coordinate Arithmetic and Boundary Comparisons
+  </p>
+
+  <!-- Animation will appear here through sketch.js -->
+
+
+  <div class="info-section">
+
+    <h2>Controls</h2>
+
+    <ul>
+      <li><b>SPACEBAR:</b> Pause / Resume animation (if implemented in sketch.js)</li>
+    </ul>
+
+    <h2>Video Explanation</h2>
+
+    <p>
+      Watch the math & code explanation here:
+      <a href="YOUR_YOUTUBE_LINK" target="_blank">
+        IT3 Final Drill Video Explanation
+      </a>
+    </p>
+
+    <h2>Sources & References</h2>
+
+    <ul>
+      <li>
+        <b>p5.js Library (v1.9.0):</b>
+        <a href="https://p5js.org/reference/" target="_blank">
+          Official p5.js Reference
+        </a>
+        - Referenced for creating the canvas, drawing shapes,
+        and animation functions.
+      </li>
+
+      <li>
+        <b>MDN Web Docs:</b>
+        <a href="https://developer.mozilla.org/" target="_blank">
+          JavaScript Documentation
+        </a>
+        - Referenced for JavaScript syntax,
+        variables, and conditional statements.
+      </li>
+    </ul>
+
+  </div>
+
+
+  <!-- Load p5.js first, then your sketch.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="sketch.js"></script>
 
 </body>
 </html>
